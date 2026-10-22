@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5e8cc">
-  <meta name="description" content="Soft and technical skills of Jamir Gomez, an aspiring mechanical engineer.">
+  <meta name="description" content="Jamir Gomez's skills page is being updated.">
   <title>Skills — Jamir Gomez</title>
   <style>
     :root {
@@ -44,19 +44,8 @@
     h1 { margin: 17px 0 12px; font: 700 clamp(3.2rem, 7vw, 5.8rem)/.98 var(--serif); letter-spacing: -.055em; }
     h1 em { color: var(--green); font-weight: 400; }
     .intro p { max-width: 620px; margin: 0; color: #414840; font: 1.13rem/1.7 var(--serif); }
-    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; padding: 12px 0 66px; }
-    .skill-card { position: relative; padding: 27px 30px 30px; border: 2px solid var(--line); border-radius: 13px 9px 14px 10px; background: var(--paper-light); box-shadow: 6px 7px 0 var(--green); }
-    .skill-card.technical { background: #e7d6ad; transform: rotate(1deg); }
-    .skill-card.soft { transform: rotate(-.7deg); }
-    .card-top { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px dashed #59604e9c; }
-    .card-icon { display: grid; flex: 0 0 46px; width: 46px; height: 46px; place-items: center; border: 2px solid var(--line); border-radius: 50% 45% 48% 42%; background: var(--yellow); font-size: 1.3rem; transform: rotate(-6deg); }
-    .technical .card-icon { background: #d8a18a; }
-    .card-top p { margin: 0; color: var(--red); font-size: .7rem; letter-spacing: .16em; font-weight: 800; text-transform: uppercase; }
-    h2 { margin: 1px 0 0; font: 700 1.85rem/1.1 var(--serif); letter-spacing: -.025em; }
-    .skill-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
-    .skill-list li { display: flex; align-items: flex-start; gap: 12px; color: #414840; font-size: 1rem; }
-    .skill-list li::before { content: "✦"; flex: 0 0 17px; padding-top: 1px; color: var(--green); font-size: .9rem; }
-    .technical .skill-list li::before { color: var(--red); }
+    .update-note { max-width: 760px; margin: 12px 0 72px; padding: 24px 28px; border: 2px solid var(--line); border-radius: 12px 9px 14px 10px; background: var(--paper-light); box-shadow: 5px 6px 0 var(--green); color: var(--muted); }
+    .update-note strong { display: block; margin-bottom: 6px; color: var(--ink); font: 700 1.35rem var(--serif); }
     footer { display: flex; justify-content: space-between; gap: 15px; padding: 18px 0 25px; border-top: 2px solid var(--line); color: var(--muted); font-size: .78rem; }
     footer span:last-child { font-family: var(--serif); font-style: italic; }
     @media (max-width: 800px) {
@@ -65,16 +54,12 @@
       .topbar nav { gap: 12px; }
       .topbar nav a { font-size: .74rem; }
       .intro { padding: 51px 0 30px; }
-      .skills-grid { grid-template-columns: 1fr; gap: 22px; padding-bottom: 52px; }
-      .skill-card.technical, .skill-card.soft { transform: none; }
     }
     @media (max-width: 390px) {
       .topbar { flex-wrap: wrap; gap: 2px 12px; padding: 8px 0; }
       .wordmark { font-size: .95rem; }
       .topbar nav { width: 100%; justify-content: space-between; gap: 8px; }
       .topbar nav a { font-size: .72rem; }
-      .skill-card { padding: 22px 20px 24px; }
-      h2 { font-size: 1.65rem; }
       footer { flex-direction: column; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -84,38 +69,18 @@
   <div class="page">
     <header class="topbar">
       <a class="wordmark" href="index.html" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
-      <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#about">About Me</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a></nav>
+      <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#about">About Me</a><a href="index.html#projects">Projects</a></nav>
     </header>
 
     <main>
       <section class="intro" aria-labelledby="skills-title">
-        <div class="eyebrow">What I bring to the workbench</div>
-        <h1 id="skills-title">My <em>skills.</em></h1>
-        <p>A growing mix of people skills and technical foundations that I’m building on my path toward mechanical engineering.</p>
+        <div class="eyebrow">A section in progress</div>
+        <h1 id="skills-title">More to <em>come.</em></h1>
+        <p>This page is being reshaped. In the meantime, you can continue through my introduction, About Me, and Projects in the main article.</p>
       </section>
-
-      <section class="skills-grid" aria-label="Skills by category">
-        <article class="skill-card soft" aria-labelledby="soft-title">
-          <div class="card-top"><span class="card-icon" aria-hidden="true">☼</span><div><p>Working well together</p><h2 id="soft-title">Soft Skills</h2></div></div>
-          <ul class="skill-list">
-            <li>Collaboration</li>
-            <li>Communication</li>
-            <li>Problem Solving</li>
-            <li>Ethics</li>
-            <li>Loyalty</li>
-          </ul>
-        </article>
-
-        <article class="skill-card technical" aria-labelledby="technical-title">
-          <div class="card-top"><span class="card-icon" aria-hidden="true">⚙</span><div><p>Tools &amp; foundations</p><h2 id="technical-title">Technical Skills</h2></div></div>
-          <ul class="skill-list">
-            <li>Proficiency with Computers</li>
-            <li>Familiarity with CAD</li>
-            <li>Data Comprehension</li>
-            <li>Fundamental Math/Physics understanding</li>
-            <li>Basic Coding Familiarity</li>
-          </ul>
-        </article>
+      <section class="update-note" aria-label="Page update">
+        <strong>Check back soon.</strong>
+        The skills section is currently being updated.
       </section>
     </main>
 
@@ -124,4 +89,3 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-

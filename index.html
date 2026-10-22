@@ -77,18 +77,12 @@
     .spark { position: absolute; color: var(--red); font: 2rem var(--serif); }
     .spark.one { top: 12%; right: -6%; transform: rotate(12deg); }
     .spark.two { top: 39%; left: -11%; color: var(--green); font-size: 1.5rem; }
-    .about { position: relative; padding: 48px 0 58px; border-top: 2px dashed #59604e9c; }
-    .portfolio-section { padding: 48px 0 58px; border-top: 2px dashed #59604e9c; scroll-margin-top: 18px; }
+    .about { position: relative; padding: 68px 0 76px; border-top: 2px dashed #59604e9c; scroll-margin-top: 24px; }
+    .portfolio-section { padding: 68px 0 76px; border-top: 2px dashed #59604e9c; scroll-margin-top: 24px; }
     .section-heading { margin-bottom: 23px; }
     .section-heading .section-label { margin: 0 0 8px; }
     .story-copy { max-width: 760px; color: #414840; font: 1.08rem/1.8 var(--serif); }
     .story-copy p { margin: 0 0 14px; }
-    .skill-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
-    .skill-panel { padding: 22px 25px; border: 2px solid var(--line); border-radius: 12px 9px 14px 10px; background: var(--paper-light); box-shadow: 4px 5px 0 var(--green); }
-    .skill-panel:nth-child(2) { background: #e7d6ad; }
-    .skill-panel h3 { margin: 0 0 12px; font: 700 1.45rem var(--serif); }
-    .skill-panel ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; margin: 0; padding: 0; list-style: none; color: #414840; }
-    .skill-panel li::before { content: "✦"; margin-right: 8px; color: var(--red); font-size: .8rem; }
     .project-note { display: flex; align-items: center; gap: 21px; max-width: 760px; padding: 22px 25px; border: 2px solid var(--line); border-radius: 12px 9px 14px 10px; background: var(--paper-light); box-shadow: 4px 5px 0 var(--green); }
     .project-note .bulb { flex: 0 0 45px; }
     .project-note p { margin: 0; color: #414840; }
@@ -125,7 +119,6 @@
       .topbar nav { width: 100%; justify-content: space-between; gap: 8px; }
       .topbar nav a { font-size: .72rem; }
       .skill-columns { grid-template-columns: 1fr; gap: 16px; }
-      .skill-panel ul { grid-template-columns: 1fr; }
       .project-note { align-items: flex-start; padding: 18px; }
       footer { flex-direction: column; }
       .site-shell { width: calc(100% - 24px); }
@@ -146,15 +139,13 @@
           <a href="#about">About Me</a>
           <a href="#interest">Bell Labs</a>
           <a href="#projects">Projects</a>
-          <a href="#soft-skills">Soft Skills</a>
-          <a href="#technical-skills">Technical Skills</a>
         </nav>
       </details>
     </aside>
   <div class="page">
     <header class="topbar">
       <a class="wordmark" href="#home" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
-      <nav aria-label="Main navigation"><a href="#about">About Me</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#interest">Bell Labs</a></nav>
+      <nav aria-label="Main navigation"><a href="#about">About Me</a><a href="#projects">Projects</a><a href="#interest">Bell Labs</a></nav>
     </header>
 
     <main id="article">
@@ -215,14 +206,6 @@
         <div class="project-note"><span class="bulb" aria-hidden="true">&#10023;</span><p><strong>Projects coming soon!</strong>This space is ready for the things I build and the ideas I explore as I continue learning. <a href="projects.html">Visit the Projects page</a>.</p></div>
       </section>
 
-      <section class="portfolio-section" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading"><p class="section-label">What I bring to the workbench</p><h2 id="skills-title">Skills</h2></div>
-        <div class="skill-columns">
-          <article class="skill-panel" id="soft-skills"><h3>Soft Skills</h3><ul><li>Collaboration</li><li>Communication</li><li>Problem Solving</li><li>Ethics</li><li>Loyalty</li></ul></article>
-          <article class="skill-panel" id="technical-skills"><h3>Technical Skills</h3><ul><li>Proficiency with Computers</li><li>Familiarity with CAD</li><li>Data Comprehension</li><li>Fundamental Math/Physics understanding</li><li>Basic Coding Familiarity</li></ul></article>
-        </div>
-        <p><a href="skills.html">See the Skills page</a></p>
-      </section>
     </main>
 
     <footer><span>© <span id="year">2026</span> Jamir Gomez</span><span>Made with curiosity and a little imagination.</span></footer>
