@@ -17,7 +17,7 @@
       <nav aria-label="Main navigation"><a href="index.html#introduction">Home</a><a href="index.html#about">About Me</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a><a href="settings.html" aria-current="page">Settings</a></nav>
     </header>
 
-    <main id="article">
+    <main id="article" class="settings-page">
       <section class="intro" aria-labelledby="settings-title">
         <div class="eyebrow">Make yourself at home</div>
         <h1 id="settings-title">Settings</h1>
@@ -42,6 +42,16 @@
             <span class="toggle-track" aria-hidden="true"></span>
             <span>Larger text</span>
           </label>
+        </article>
+        <article class="settings-card">
+          <h2>Website color</h2>
+          <p>Choose a custom color to tint the site’s backgrounds, highlights, buttons, and details.</p>
+          <div class="color-setting">
+            <label class="preference-toggle" for="accent-color">Pick your color</label>
+            <input class="color-input" id="accent-color" type="color" value="#3f654e" aria-describedby="accent-color-value">
+            <output class="color-value" id="accent-color-value" for="accent-color">#3F654E</output>
+            <button class="button secondary reset-color" id="reset-accent-color" type="button">Reset color</button>
+          </div>
         </article>
       </section>
     </main>
