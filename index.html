@@ -16,6 +16,10 @@
       <a class="wordmark" href="#introduction" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
       <nav aria-label="Main navigation"><a href="#introduction">Home</a><a href="#about">About Me</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
     </header>
+    <div class="view-controls" role="group" aria-label="Display preferences">
+      <label class="preference-toggle" for="dark-mode-toggle"><input id="dark-mode-toggle" type="checkbox" role="switch"><span class="toggle-track" aria-hidden="true"></span><span>Dark mode</span></label>
+      <label class="preference-toggle" for="large-text-toggle"><input id="large-text-toggle" type="checkbox" role="switch"><span class="toggle-track" aria-hidden="true"></span><span>Larger text</span></label>
+    </div>
 
     <main id="article">
       <section class="hero" id="introduction" aria-labelledby="intro-title">
@@ -115,6 +119,22 @@
   </div>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const displaySettings = [
+      { id: 'dark-mode-toggle', key: 'jamir-portfolio-dark-mode', target: document.body, className: 'dark-mode' },
+      { id: 'large-text-toggle', key: 'jamir-portfolio-large-text', target: document.documentElement, className: 'large-text' }
+    ];
+
+    displaySettings.forEach(({ id, key, target, className }) => {
+      const toggle = document.getElementById(id);
+      let enabled = false;
+      try { enabled = localStorage.getItem(key) === 'true'; } catch { /* Storage may be unavailable in private browsing. */ }
+      toggle.checked = enabled;
+      target.classList.toggle(className, enabled);
+      toggle.addEventListener('change', () => {
+        target.classList.toggle(className, toggle.checked);
+        try { localStorage.setItem(key, String(toggle.checked)); } catch { /* The setting still applies for this visit. */ }
+      });
+    });
   </script>
 </body>
 </html>
