@@ -40,7 +40,11 @@
     .mark { display: grid; place-items: center; width: 36px; height: 36px; border: 2px solid var(--line); border-radius: 50% 45% 48% 42%; background: var(--yellow); font-size: .75rem; transform: rotate(-7deg); }
     .topbar nav { display: flex; flex-wrap: wrap; gap: 18px; }
     .topbar nav a { display: inline-flex; min-height: 44px; align-items: center; font-size: .84rem; font-weight: 700; letter-spacing: .08em; text-decoration-thickness: 1px; text-underline-offset: 5px; text-transform: uppercase; }
-    .view-controls { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 18px; padding: 12px 0 4px; }
+    .settings-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; padding: 8px 0 72px; }
+    .settings-card { padding: 24px 26px; border: 2px solid var(--line); border-radius: 13px 9px 14px 10px; background: var(--paper-light); box-shadow: 5px 6px 0 var(--green); }
+    .settings-card:nth-child(2) { background: #e7d6ad; transform: rotate(.6deg); }
+    .settings-card h2 { margin: 0 0 8px; font: 700 1.55rem/1.15 var(--serif); }
+    .settings-card p { margin: 0 0 18px; color: var(--muted); font-size: .92rem; }
     .preference-toggle { display: inline-flex; align-items: center; gap: 9px; min-height: 36px; color: var(--muted); font-size: .82rem; font-weight: 700; cursor: pointer; }
     .preference-toggle input { position: absolute; width: 1px; height: 1px; opacity: 0; }
     .toggle-track { position: relative; width: 38px; height: 22px; flex: 0 0 38px; border: 2px solid var(--line); border-radius: 20px; background: #d8c9a8; transition: background-color .18s; }
@@ -172,10 +176,12 @@ body.dark-mode .skill-list li { color: #ded8c5; }
 body.dark-mode .interest,
 body.dark-mode .fact:nth-child(2),
 body.dark-mode .skill-card.technical,
-body.dark-mode .contact-card:nth-child(2) { background: #3b473a; }
+body.dark-mode .contact-card:nth-child(2),
+body.dark-mode .settings-card:nth-child(2) { background: #3b473a; }
 body.dark-mode .technical .card-icon { background: #885c4d; }
 body.dark-mode .pretend-card { background: #2b342d; }
 body.dark-mode .portrait { background: #564b38; }
+body.dark-mode .portrait svg { filter: brightness(.84) saturate(.82); }
 body.dark-mode .spark.two { color: var(--green-dark); }
 body.dark-mode .button { color: var(--ink); }
 body.dark-mode .button.secondary { background: var(--paper-light); color: var(--ink); }
@@ -189,7 +195,8 @@ body.dark-mode .contact-card,
 body.dark-mode .project-note,
 body.dark-mode .redirect-card,
 body.dark-mode .caption { border-color: var(--line); }
-@media (max-width: 800px) { .view-controls { justify-content: flex-start; } }
+@media (max-width: 800px) { .settings-grid { grid-template-columns: 1fr; } .settings-card:nth-child(2) { transform: none; } }
+@media (max-width: 390px) { .settings-grid { gap: 16px; padding-bottom: 52px; } .settings-card { padding: 21px 19px; } }
 @media (prefers-reduced-motion: reduce) {
   .toggle-track, .toggle-track::after { transition-duration: .01ms !important; }
 }

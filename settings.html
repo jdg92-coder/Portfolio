@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5e8cc">
+  <meta name="description" content="Choose display preferences for Jamir Gomez's portfolio.">
+  <title>Settings — Jamir Gomez</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="preferences.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to settings</a>
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="index.html#introduction" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
+      <nav aria-label="Main navigation"><a href="index.html#introduction">Home</a><a href="index.html#about">About Me</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a><a href="settings.html" aria-current="page">Settings</a></nav>
+    </header>
+
+    <main id="article">
+      <section class="intro" aria-labelledby="settings-title">
+        <div class="eyebrow">Make yourself at home</div>
+        <h1 id="settings-title">Settings</h1>
+        <p>Choose how the portfolio looks and reads on this browser. Your preferences are saved when storage is available.</p>
+      </section>
+
+      <section class="settings-grid" aria-label="Display preferences">
+        <article class="settings-card">
+          <h2>Dark mode</h2>
+          <p>Use a darker version of the warm portfolio colors.</p>
+          <label class="preference-toggle" for="dark-mode-toggle">
+            <input id="dark-mode-toggle" type="checkbox" role="switch">
+            <span class="toggle-track" aria-hidden="true"></span>
+            <span>Dark mode</span>
+          </label>
+        </article>
+        <article class="settings-card">
+          <h2>Larger text</h2>
+          <p>Increase the text size throughout the site for easier reading.</p>
+          <label class="preference-toggle" for="large-text-toggle">
+            <input id="large-text-toggle" type="checkbox" role="switch">
+            <span class="toggle-track" aria-hidden="true"></span>
+            <span>Larger text</span>
+          </label>
+        </article>
+      </section>
+    </main>
+
+    <footer><span>© <span id="year">2026</span> Jamir Gomez</span><span>Made with curiosity and a little imagination.</span></footer>
+  </div>
+</body>
+</html>
