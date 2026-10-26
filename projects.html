@@ -1,107 +1,12 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5e8cc">
-  <meta name="description" content="A home for Jamir Gomez's future engineering and creative projects.">
+  <meta http-equiv="refresh" content="0; url=index.html#projects">
   <title>Projects — Jamir Gomez</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --paper: #f5e8cc;
-      --paper-light: #fff8e9;
-      --ink: #292d29;
-      --muted: #5b6259;
-      --green: #3f654e;
-      --green-dark: #294735;
-      --red: #bc5a43;
-      --yellow: #e8b852;
-      --line: #343c32;
-      --serif: Georgia, "Times New Roman", serif;
-      --sans: "Trebuchet MS", Arial, sans-serif;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background-color: var(--paper); background-image: radial-gradient(#755a3517 .8px, transparent .8px); background-size: 8px 8px; color: var(--ink); font-family: var(--sans); line-height: 1.6; }
-    a { color: inherit; }
-    .page { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
-    .topbar { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 2px solid var(--line); }
-    .wordmark { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-family: var(--serif); font-weight: 700; font-size: 1.12rem; }
-    .mark { display: grid; place-items: center; width: 36px; height: 36px; border: 2px solid var(--line); border-radius: 50% 45% 48% 42%; background: var(--yellow); font-size: .75rem; transform: rotate(-7deg); }
-    .topbar nav { display: flex; gap: 18px; }
-    .topbar nav a { display: inline-flex; min-height: 44px; align-items: center; font-size: .84rem; font-weight: 700; letter-spacing: .08em; text-decoration-thickness: 1px; text-underline-offset: 5px; text-transform: uppercase; }
-    .intro { padding: 66px 0 36px; }
-    .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--green-dark); font-size: .75rem; letter-spacing: .17em; font-weight: 800; text-transform: uppercase; }
-    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--red); }
-    h1 { margin: 17px 0 12px; font: 700 clamp(3.2rem, 7vw, 5.8rem)/.98 var(--serif); letter-spacing: -.055em; }
-    h1 em { color: var(--green); font-weight: 400; }
-    .intro p { max-width: 620px; margin: 0; color: #414840; font: 1.13rem/1.7 var(--serif); }
-    .placeholder { position: relative; display: grid; grid-template-columns: 180px 1fr; align-items: center; gap: 34px; max-width: 820px; margin: 8px 0 76px; padding: 34px; border: 2px solid var(--line); border-radius: 13px 9px 14px 10px; background: var(--paper-light); box-shadow: 7px 8px 0 var(--green); }
-    .drawing { display: grid; min-height: 170px; place-items: center; border: 2px dashed #59604e9c; border-radius: 12px 8px 14px 10px; background: #e7d6ad; }
-    .drawing svg { width: 130px; max-width: 82%; }
-    .note { display: inline-block; margin: 0 0 8px; color: var(--red); font-size: .72rem; letter-spacing: .16em; font-weight: 800; text-transform: uppercase; }
-    h2 { margin: 0 0 10px; font: 700 clamp(1.8rem, 4vw, 2.5rem)/1.1 var(--serif); letter-spacing: -.03em; }
-    .placeholder-copy p { max-width: 460px; margin: 0; color: var(--muted); }
-    .badge { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 7px 12px; border: 1.5px solid var(--line); border-radius: 20px; background: #e7d6ad; color: var(--green-dark); font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
-    footer { display: flex; justify-content: space-between; gap: 15px; padding: 18px 0 25px; border-top: 2px solid var(--line); color: var(--muted); font-size: .78rem; }
-    footer span:last-child { font-family: var(--serif); font-style: italic; }
-    @media (max-width: 800px) {
-      .page { width: min(100% - 32px, 600px); }
-      .topbar { min-height: 66px; }
-      .topbar nav { gap: 12px; }
-      .topbar nav a { font-size: .74rem; }
-      .intro { padding: 51px 0 30px; }
-      .placeholder { grid-template-columns: 1fr; gap: 22px; margin-bottom: 54px; padding: 24px; }
-      .drawing { min-height: 145px; }
-      .drawing svg { width: 115px; }
-    }
-    @media (max-width: 390px) {
-      .topbar { flex-wrap: wrap; gap: 2px 12px; padding: 8px 0; }
-      .wordmark { font-size: .95rem; }
-      .topbar nav { width: 100%; justify-content: space-between; gap: 7px; }
-      .topbar nav a { font-size: .68rem; }
-      .placeholder { padding: 18px; }
-      footer { flex-direction: column; }
-    }
-  </style>
+  <style>body{margin:0;padding:12vh 24px;background:#f5e8cc;color:#292d29;font:1rem/1.7 "Trebuchet MS",Arial,sans-serif;text-align:center}main{max-width:620px;margin:auto;padding:36px;border:2px solid #343c32;border-radius:13px 9px 14px 10px;background:#fff8e9;box-shadow:6px 7px 0 #3f654e}h1{font:700 clamp(2rem,7vw,3.5rem)/1 Georgia,"Times New Roman",serif}a{color:#294735;font-weight:700}</style>
 </head>
-<body>
-  <div class="page">
-    <header class="topbar">
-      <a class="wordmark" href="index.html" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
-      <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="projects.html" aria-current="page">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a></nav>
-    </header>
-
-    <main>
-      <section class="intro" aria-labelledby="projects-title">
-        <div class="eyebrow">Ideas in the making</div>
-        <h1 id="projects-title">My <em>projects.</em></h1>
-        <p>A spot to share the things I build, the problems I explore, and what I learn along the way.</p>
-      </section>
-
-      <section class="placeholder" aria-labelledby="coming-title">
-        <div class="drawing" aria-hidden="true">
-          <svg viewBox="0 0 160 160" role="img" aria-labelledby="idea-title">
-            <title id="idea-title">A light bulb idea sketch</title>
-            <path d="M80 19 C53 19 35 39 35 64 C35 83 47 93 55 106 Q59 111 59 121 H101 Q101 111 105 106 C113 93 125 83 125 64 C125 39 107 19 80 19Z" fill="#e8b852" stroke="#292d29" stroke-width="5" stroke-linejoin="round"/>
-            <path d="M62 123 H98 M64 132 H96 M69 141 H91" stroke="#292d29" stroke-width="5" stroke-linecap="round"/>
-            <path d="M80 37 V49 M59 51 L67 60 M101 51 L93 60" stroke="#fff8e9" stroke-width="5" stroke-linecap="round"/>
-            <path d="M23 52 L13 47 M137 52 L147 47 M24 85 L13 88 M136 85 L147 88" stroke="#bc5a43" stroke-width="4" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="placeholder-copy">
-          <span class="note">Workbench status</span>
-          <h2 id="coming-title">Projects coming soon!</h2>
-          <p>This page is ready for future projects. Check back as I continue learning, experimenting, and building toward a career in mechanical engineering.</p>
-          <span class="badge">Under construction</span>
-        </div>
-      </section>
-    </main>
-
-    <footer><span>© <span id="year">2026</span> Jamir Gomez</span><span>Made with curiosity and a little imagination.</span></footer>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+<body><main><h1>Projects</h1><p>Taking you to the Projects section of the portfolio.</p><p><a href="index.html#projects">Continue to Projects</a></p></main></body>
 </html>
-
