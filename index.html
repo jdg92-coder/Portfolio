@@ -91,6 +91,18 @@
     .fact:nth-child(3) { transform: rotate(-.7deg); }
     .fact strong { display: block; margin-bottom: 4px; font: 700 1.1rem var(--serif); }
     .fact p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding: 8px 0; }
+    .skill-card { padding: 24px 27px; border: 2px solid var(--line); border-radius: 13px 9px 14px 10px; background: var(--paper-light); box-shadow: 5px 6px 0 var(--green); }
+    .skill-card.technical { background: #e7d6ad; transform: rotate(.6deg); }
+    .card-top { display: flex; align-items: center; gap: 13px; margin-bottom: 16px; padding-bottom: 13px; border-bottom: 2px dashed #59604e9c; }
+    .card-icon { display: grid; flex: 0 0 44px; width: 44px; height: 44px; place-items: center; border: 2px solid var(--line); border-radius: 50% 45% 48% 42%; background: var(--yellow); font-size: 1.25rem; transform: rotate(-6deg); }
+    .technical .card-icon { background: #d8a18a; }
+    .card-top p { margin: 0; color: var(--red); font-size: .68rem; letter-spacing: .14em; font-weight: 800; text-transform: uppercase; }
+    .card-top h3 { margin: 1px 0 0; font: 700 1.55rem/1.1 var(--serif); }
+    .skill-list { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+    .skill-list li { display: flex; gap: 10px; color: #414840; }
+    .skill-list li::before { content: "✦"; color: var(--green); }
+    .technical .skill-list li::before { color: var(--red); }
     .contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; max-width: 850px; }
     .contact-card { padding: 23px 25px; border: 2px solid var(--line); border-radius: 13px 9px 14px 10px; background: var(--paper-light); box-shadow: 5px 6px 0 var(--green); }
     .contact-card:nth-child(2) { background: #e7d6ad; transform: rotate(.5deg); }
@@ -117,14 +129,15 @@
       .intro { font-size: 1.08rem; }
       .portrait-wrap { width: min(78%, 340px); }
       .about-grid { grid-template-columns: 1fr; gap: 15px; }
-      .fact-grid, .contact-grid, .pretend-grid { grid-template-columns: 1fr; }
+      .skills-grid, .fact-grid, .contact-grid, .pretend-grid { grid-template-columns: 1fr; }
+      .skill-card.technical, .fact:nth-child(2), .fact:nth-child(3), .contact-card:nth-child(2) { transform: none; }
     }
     @media (max-width: 390px) {
       .topbar { flex-wrap: wrap; gap: 2px 12px; padding: 8px 0; }
       .wordmark { font-size: .95rem; }
       .topbar nav { width: 100%; justify-content: space-between; gap: 8px; }
       .topbar nav a { font-size: .72rem; }
-      .fact-grid, .contact-grid, .pretend-grid { grid-template-columns: 1fr; gap: 16px; }
+      .skills-grid, .fact-grid, .contact-grid, .pretend-grid { grid-template-columns: 1fr; gap: 16px; }
       .project-note { align-items: flex-start; padding: 18px; }
       footer { flex-direction: column; }
       .site-shell { width: calc(100% - 24px); }
@@ -138,7 +151,7 @@
   <div class="page">
     <header class="topbar">
       <a class="wordmark" href="#introduction" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
-      <nav aria-label="Main navigation"><a href="#introduction">Home</a><a href="#about">About Me</a><a href="#projects">Projects</a><a href="skills.html">Skills</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Main navigation"><a href="#introduction">Home</a><a href="#about">About Me</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
     </header>
 
     <main id="article">
@@ -202,6 +215,20 @@
       <section class="portfolio-section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading"><p class="section-label">Ideas in the making</p><h2 id="projects-title">Projects</h2></div>
         <div class="project-note"><span class="bulb" aria-hidden="true">&#10023;</span><p><strong>Projects coming soon!</strong>This space is ready for the things I build, the problems I explore, and what I learn along the way as I continue studying mechanical engineering.</p></div>
+      </section>
+
+      <section class="portfolio-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><p class="section-label">What I bring to the workbench</p><h2 id="skills-title">My skills</h2><p class="story-copy">A growing mix of people skills and technical foundations that I’m building on my path toward mechanical engineering.</p></div>
+        <div class="skills-grid" aria-label="Skills by category">
+          <article class="skill-card soft">
+            <div class="card-top"><span class="card-icon" aria-hidden="true">☼</span><div><p>Working well together</p><h3>Soft Skills</h3></div></div>
+            <ul class="skill-list"><li>Collaboration</li><li>Communication</li><li>Problem Solving</li><li>Ethics</li><li>Loyalty</li></ul>
+          </article>
+          <article class="skill-card technical">
+            <div class="card-top"><span class="card-icon" aria-hidden="true">⚙</span><div><p>Tools &amp; foundations</p><h3>Technical Skills</h3></div></div>
+            <ul class="skill-list"><li>Proficiency with Computers</li><li>Familiarity with CAD</li><li>Data Comprehension</li><li>Fundamental Math/Physics understanding</li><li>Basic Coding Familiarity</li></ul>
+          </article>
+        </div>
       </section>
 
       <section class="portfolio-section" id="contact" aria-labelledby="contact-title">
