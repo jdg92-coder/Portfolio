@@ -8,6 +8,8 @@
   <title>Jamir Gomez — Curious by Design</title>
   <link rel="stylesheet" href="styles.css">
   <script src="preferences.js" defer></script>
+  <script src="projects.js" defer></script>
+  <script src="scroll-effects.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#article">Skip to article</a>
@@ -77,8 +79,16 @@
       </section>
 
       <section class="portfolio-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading"><p class="section-label">Ideas in the making</p><h2 id="projects-title">Projects</h2></div>
-        <div class="project-note"><span class="bulb" aria-hidden="true">&#10023;</span><p><strong>Projects coming soon!</strong>This space is ready for the things I build, the problems I explore, and what I learn along the way as I continue studying mechanical engineering.</p></div>
+        <div class="section-heading"><p class="section-label">First Understandings</p><h2 id="projects-title">Projects</h2></div>
+        <div class="project-gallery" aria-label="Project image gallery">
+          <button class="gallery-arrow" id="gallery-prev" type="button" aria-label="Previous project image"><span aria-hidden="true">←</span></button>
+          <figure class="gallery-slide" aria-label="Image 1 of 1">
+            <img src="assets/number-guessing-game.png" alt="Python notebook showing a random number generator and a number guessing game that asks the player to guess from 1 to 10.">
+            <figcaption><strong>Number Guessing Game</strong><span>This Google Colab project is meant to function as a number guessing game (obviously) and was one of the first codes ive written.</span></figcaption>
+          </figure>
+          <button class="gallery-arrow" id="gallery-next" type="button" aria-label="Next project image"><span aria-hidden="true">→</span></button>
+          <p class="gallery-count" id="gallery-count" aria-live="polite">1 / 1</p>
+        </div>
       </section>
 
       <section class="portfolio-section" id="skills" aria-labelledby="skills-title">
@@ -106,7 +116,6 @@
           <article class="pretend-card"><strong>Tin-can hotline</strong><p>Two cans and a long string required.</p></article>
           <article class="pretend-card"><strong>Morse code</strong><p>Tap out a hello on the nearest tabletop.</p></article>
         </div>
-        <p class="fiction-note">Just for fun — email and phone are the real contact options here.</p>
       </section>
 
     </main>
