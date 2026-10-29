@@ -4,10 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5e8cc">
-  <meta http-equiv="refresh" content="0; url=index.html#projects">
+  <meta name="description" content="Projects and experiments by Jamir Gomez.">
   <title>Projects — Jamir Gomez</title>
   <link rel="stylesheet" href="styles.css">
   <script src="preferences.js" defer></script>
+  <script src="projects.js" defer></script>
 </head>
-<body class="redirect-page"><main class="redirect-card"><h1>Projects</h1><p>Taking you to the Projects section of the portfolio.</p><p><a href="index.html#projects">Continue to Projects</a></p></main></body>
+<body>
+  <a class="skip-link" href="#article">Skip to projects</a>
+  <div class="site-shell"><div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="index.html#introduction" aria-label="Jamir Gomez home"><span class="mark">JG</span><span>Jamir Gomez</span></a>
+      <nav aria-label="Main navigation"><a href="index.html#introduction">Home</a><a href="index.html#about">About Me</a><a href="projects.html" aria-current="page">Projects</a><a href="skills.html">Skills</a><a href="contact.html">Contact</a><a href="settings.html">Settings</a></nav>
+    </header>
+    <main id="article" class="projects-page">
+      <section class="intro" aria-labelledby="projects-title">
+        <div class="eyebrow">Ideas in the making</div>
+        <h1 id="projects-title">Projects</h1>
+        <p>A few things I’ve been learning and making along the way.</p>
+      </section>
+      <section class="project-gallery" aria-label="Project image gallery">
+        <div class="gallery-window" id="gallery-window">
+          <figure class="gallery-slide" aria-label="Image 1 of 1">
+            <img src="assets/number-guessing-game.png" alt="Python notebook showing a random number generator and a number guessing game that asks the player to guess from 1 to 10.">
+            <figcaption><strong>Number Guessing Game</strong><span>A small Python project practicing random numbers, loops, and user input.</span></figcaption>
+          </figure>
+        </div>
+        <div class="gallery-controls">
+          <button class="gallery-arrow" id="gallery-prev" type="button" aria-label="Previous project image" disabled><span aria-hidden="true">←</span></button>
+          <p class="gallery-count" id="gallery-count" aria-live="polite">1 / 1</p>
+          <button class="gallery-arrow" id="gallery-next" type="button" aria-label="Next project image" disabled><span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+    </main>
+    <footer><span>© <span id="year">2026</span> Jamir Gomez</span><span>Made with curiosity and a little imagination.</span></footer>
+  </div></div>
+</body>
 </html>
